@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Power Consumption Control Center</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <h2>Power Consumption Control Center</h2>
+  <div class="content">
+    <div class="card-grid">
+      <div class="card">
+        <p><i class="fas fa-lightbulb fa-2x" style="color:#c81919;"></i>     <strong>Heating Pump</strong></p>
+        <p>Switch: <a href="/heating_pump/toggle"><i class="fa-duotone fa-toggle-%H_PUMP_CONTROL_STATE%">x</i></a></p>
+        <p>State: <strong> %H_PUMP_STATE%</strong></p>
+        <p>Power Consumption: <strong> %H_PUMP_POWER%</strong> Watt</p>
+      </div>
+    </div>
+    <br>
+    <div class="card-grid">
+        <div class="card">
+          <p><i class="fas fa-lightbulb fa-2x" style="color:#c81919;"></i>     <strong>Heating Rod</strong></p>
+          <p>Switch: <a href="/heating_rod/toggle"><i class="fa-duotone fa-toggle-%H_ROD_CONTROL_STATE%">x</i></a></p>          
+          <p>State: <strong> %H_ROD_STATE%</strong></p>
+          <p>Power Consumption: <strong> %H_ROD_POWER%</strong> Watt</p>
+        </div>
+      </div>
+  </div>
+  <br>
+  <p>(c) by Markus Sandholz (Version: %VERSION%)</p>
+</body>
+
+</html>
